@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Youtube</title>
+</head>
+
+<body class="bg-black text-white p-10">
+    <!-- Menu NavBar -->
+    <nav class="hidden md:flex justify-between p-10">
+        <div class="font=bold text-2xl text-red-500">
+            <p>Youtube</p>
+        </div>
+        <div class="flex gap-16 font=bold justify-center items-center">
+            <p class="px-10 py-2 hover:bg-zinc-500 hover:rounded-lg">Home</p>
+            <p class="px-10 py-2 hover:bg-zinc-500 hover:rounded-lg">Playlist</p>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-search">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-bell">
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                </svg>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-circle-user-round">
+                    <path d="M18 20a6 6 0 0 0-12 0" />
+                    <circle cx="12" cy="10" r="4" />
+                    <circle cx="12" cy="12" r="10" />
+                </svg>
+            </div>
+        </div>
+
+    </nav>
+    <div class="flex justify-between items-center py-4 md:hidden">
+        <button onclick="openNav()" class=" bg-zinc-500 p-1 m-2 rounded-md hover:bg-zinc-400 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-align-justify">
+                <line x1="3" x2="21" y1="6" y2="6" />
+                <line x1="3" x2="21" y1="12" y2="12" />
+                <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+        </button>
+        <div id="mySidenav"
+            class="fixed top-0 left-0 h-full w-0 bg-gray-900 overflow-x-hidden transition-all duration-500 pt-16 z-10">
+            <a href="javascript:void(0)"
+                class="absolute top-0 right-6 text-4xl ml-12 text-gray-500 hover:text-white transition-colors duration-300"
+                onclick="closeNav()">&times;</a>
+            <a href="#"
+                class="block px-8 py-2 text-2xl text-gray-500 hover:text-white transition-colors duration-300">About</a>
+            <a href="#"
+                class="block px-8 py-2 text-2xl text-gray-500 hover:text-white transition-colors duration-300">Services</a>
+            <a href="#"
+                class="block px-8 py-2 text-2xl text-gray-500 hover:text-white transition-colors duration-300">Clients</a>
+            <a href="#"
+                class="block px-8 py-2 text-2xl text-gray-500 hover:text-white transition-colors duration-300">Contact</a>
+        </div>
+        <div class="font=bold text-2xl text-red-500">
+            <p>Youtube</p>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-circle-user-round">
+                <path d="M18 20a6 6 0 0 0-12 0" />
+                <circle cx="12" cy="10" r="4" />
+                <circle cx="12" cy="12" r="10" />
+            </svg>
+        </div>
+    </div>
+    <!-- Video -->
+    <div class="pb-10">
+        <iframe width="100%" height="300 sm:700" src="https://www.youtube.com/embed/RnD8L48VfLY?si=p07ftk0uGigr7O3y"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <div class="flex justify-between pt-10">
+            <div>
+                <h1 class="text-xl sm:text-4xl font-bold">Shinchan</h1>
+                <p class="text-sm sm:text-lg pt-2">Description my song</p>
+            </div>
+
+            <div class="flex gap-5">
+                <button
+                    class="flex bg-zinc-500 w-14 h-10 p-2 sm:w-24 sm:h-14 gap-3 justify-center items-center rounded-lg font-bold text-xl hover:bg-zinc-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-thumbs-up">
+                        <path d="M7 10v12" />
+                        <path
+                            d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z" />
+                    </svg>
+                    0
+                </button>
+                <button
+                    class="flex bg-zinc-500 w-14 h-10 p-2 sm:w-24 sm:h-14 gap-3 justify-center items-center rounded-lg font-bold text-xl hover:bg-zinc-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-thumbs-down">
+                        <path d="M17 14V2" />
+                        <path
+                            d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z" />
+                    </svg>
+                    0
+                </button>
+                <button
+                    class="bg-zinc-500 w-14 h-10 p-2 sm:w-24 sm:h-14 rounded-lg font-bold text-md sm:text-xl hover:bg-zinc-400">
+                    Share
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <hr class="border-1 border-zinc-700">
+
+    <div class="flex justify-between py-10">
+        <div class="flex gap-3">
+            <img class="w-10 rounded-lg "
+                src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                alt="">
+            <div>
+                <h1 class="text-sm sm:text-lg font-bold">Pops anime</h1>
+                <p class="text-sm sm:text-lg pt-2">100M</p>
+            </div>
+        </div>
+        <button class="bg-zinc-500 px-10 sm:h-14 rounded-lg font-bold text-md sm:text-xl hover:bg-zinc-400">
+            Subscribe
+        </button>
+    </div>
+    </div>
+
+    <hr class="border-1 border-zinc-700">
+
+    <!-- Video List-->
+    <div class="pt-10 grid grid-cols-4 gap-3" id="myVideo"> </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // ข้อมูลวิดีโอและผู้ใช้ที่จะแสดง
+            const videos = [
+                {
+                    videoSrc: "https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E",
+                    userImg: "https://avatars.githubusercontent.com/u/744487?v=4",
+                    title: "My Song",
+                    description: "Description my song"
+                },
+            ];
+
+            // เลือก element ที่จะใส่วิดีโอ
+            const videoContainer = document.getElementById("myVideo");
+
+            // ลูปผ่านข้อมูลวิดีโอและสร้าง HTML
+            videos.forEach((video) => {
+                for (let i = 0; i < 12; i++) {
+                    const videoHTML = `
+                    <div>
+                        <img class="rounded-lg" src="${video.videoSrc}" alt="video">
+                        <div class="flex gap-3 pt-3">
+                            <img class="w-8 h-8 sm:w-12 sm:h-12 rounded-lg" src="${video.userImg}" alt="user">
+                            <div>
+                                <h1 class="text-sm sm:text-lg font-bold">${video.title}</h1>
+                                <p class="text-[8px] sm:text-lg">${video.description}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                    // เพิ่ม HTML ของวิดีโอใน container
+                    videoContainer.innerHTML += videoHTML;
+                }
+            });
+        });
+    </script>
+
+
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <img class="w-1/3 rounded-lg"
+            src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t1.6435-9/161509622_2217315375068653_2892015983235965461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEAlGV1PRh01nAgSd7_WJv8USE9i489xDhRIT2Ljz3EODvKs32UlrNwVNLDumC3xJg65AO3nCBZcVC1ddNGXCmN&_nc_ohc=TsQKA1D0MBoQ7kNvgEte1yc&_nc_ht=scontent.fbkk24-1.fna&oh=00_AYAzXscSmvnhzTfVtp-xXrYYsygA0Kfjrtq7Eqo-_Cd2pQ&oe=6705024E"
+            alt="video">
+
+        <div class="flex gap-3 pt-3">
+            <div class="flex gap-3 pt-5">
+                <img class="w-12 h-12 rounded-lg "
+                    src=https://avatars.githubusercontent.com/u/744487?v=4&fbclid=IwY2xjawFKVSNleHRuA2FlbQIxMAABHTy672J8kE1TNephVqIvv7OJd7TqaHZ47tA3mNEYo6FoD9iXTly9rcXdnA_aem_YwuVrTFZSqinM6FOXcr_ZQ"
+                    alt="">
+                <div>
+                    <h1 class="text-lg font-bold">Pops anime</h1>
+                    <p class="text-lg">100M</p>
+                </div>
+                <div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
